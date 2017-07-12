@@ -1,5 +1,5 @@
 $(document).ready(function() { 
-      /* 1 */
+    /* 1 */
        $('div#target1').css('background-color','blue');
     
     /* 2 */
