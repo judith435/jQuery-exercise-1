@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script>
+           function runTest() {
+               var digger = {species:"gerbil", name:"Digger", color:"white", sayMyName:"kukuriku"};
+               alert ('digger: ' + JSON.stringify(digger)) 
+
+                // function meepMeep(){
+                //     alert("meep meep");
+                // }
+
+                // digger.speak = meepMeep();
+
+                function myNameIs(){
+	                alert("Meep! I am a " + this.species);
+                }
+                
+                digger.sayMyName = myNameIs;
+                digger.sayMyName();
+
+                function giveMeTheGerbil(){
+	                return digger;
+                }
+
+                giveMeTheGerbil().sayMyName();
+                giveMeTheGerbil().myNameIs();
+
+                //$(document).ready(…);
+            }
+        </script>
+    </head>
+    <body>
+          <button id='btnTest' onclick="runTest()" >test</button>
+    </body>
+</html>

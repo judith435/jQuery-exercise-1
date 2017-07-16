@@ -25,6 +25,7 @@ $(document).ready(function() {
       $('div#target8 input:text').prop("readonly",true);
 
 
+      
     /* 9 */
       $('div#target9 select option:eq(1)').attr('selected', 'selected');
 
@@ -52,7 +53,7 @@ $(document).ready(function() {
         });
 
     /* 15 */
-    $('div#target15 select option').each(function(key,v) {
+    $('div#target15 select option').each(function(key,value) {
                     let color = 'blue';
                     if (key % 2 == 0) {
                         color ='red';
